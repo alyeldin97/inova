@@ -1,4 +1,4 @@
-package com.example.project_template
+package com.example.Inova
 
 import io.flutter.embedding.android.FlutterActivity
 

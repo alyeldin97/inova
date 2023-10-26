@@ -1,5 +1,5 @@
 import 'package:another_flushbar/flushbar_helper.dart';
-import 'package:project_template/presentation/utils/textstyles.dart';
+import 'package:Inova/presentation/utils/textstyles.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

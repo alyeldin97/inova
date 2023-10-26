@@ -1,6 +1,6 @@
 {
-    "name": "project_template",
-    "short_name": "project_template",
+    "name": "Inova",
+    "short_name": "Inova",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

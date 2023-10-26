@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_template/presentation/core/error_dialog.dart';
+import 'package:Inova/presentation/core/error_dialog.dart';
 
 class ErrorScreen extends StatelessWidget {
   final String messageEn;

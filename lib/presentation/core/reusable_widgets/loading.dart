@@ -1,4 +1,4 @@
-import 'package:project_template/presentation/utils/colors.dart';
+import 'package:Inova/presentation/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class LoadingWidget extends StatelessWidget {

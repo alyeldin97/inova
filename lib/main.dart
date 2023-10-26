@@ -1,7 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
 import 'configs/bloc_observer.dart';
 import 'inits.dart';
 import 'injection_container.dart';
@@ -14,21 +12,7 @@ void main() async {
   Bloc.observer = MyBlocObserver();
   await initGetIt();
   await Inits.initHive();
-  await Inits.getCachedData();
-  // tester();
-  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  runApp(
-
-      //     DevicePreview(
-      //   builder: (context) => MyApp(),
-      //   enabled: true,
-      // )
-      MyApp());
-
-  // DevicePreview(
-  // builder: (context) => MyApp(),
-  // enabled: true,
-  // )
+  runApp(const MyApp());
 }
 
 // void tester() {

@@ -53,11 +53,4 @@ class AppValidators {
     }
     return null;
   }
-
-  static String? validateOtp(String? otp) {
-    if (otp != null && otp.length != 6) {
-      return ValidatorMessages.phone;
-    }
-    return null;
-  }
 }
