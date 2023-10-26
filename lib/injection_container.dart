@@ -1,13 +1,13 @@
 import 'package:get_it/get_it.dart';
 
-import 'application/global/series_cubit.dart';
+import 'application/series/series_bloc.dart';
 import 'configs/constants/hive.dart';
 import 'data/local/user/series_lds.dart';
 import 'data/local/user/series_lds_impl.dart';
 import 'data/remote/sign-in/series_impl.dart';
 import 'data/remote/sign-in/series_rds.dart';
-import 'domain/repos/sign_in/series_repo.dart';
-import 'domain/repos/sign_in/series_repo_impl.dart';
+import 'domain/repos/series/series_repo.dart';
+import 'domain/repos/series/series_repo_impl.dart';
 import 'helpers/api_helper.dart';
 import 'helpers/hive_helper.dart';
 
@@ -38,5 +38,5 @@ Future<void> initGetIt() async {
   );
 
   // ! Cubits
-  sl.registerFactory<SeriesCubit>(() => SeriesCubit(sl()));
+  sl.registerFactory<SeriesBloc>(() => SeriesBloc(sl()));
 }

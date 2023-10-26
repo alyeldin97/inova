@@ -18,9 +18,8 @@ class SeriesRemoteDataSourceImpl implements SeriesRemoteDataSource {
   }) async {
     try {
       Map<String, dynamic> response = await networkService.getRequest(
-        ApiEndPoints.login,
+        ApiEndPoints.fetchAllSeries,
       );
-
       return SeriesModel.fromJson(response);
     } on Failure {
       rethrow;

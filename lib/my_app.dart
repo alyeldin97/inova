@@ -5,7 +5,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:Inova/presentation/utils/routes.dart';
-import 'application/global/series_cubit.dart';
+import 'application/series/series_bloc.dart';
 import 'configs/constants/sizes.dart';
 import 'injection_container.dart';
 
@@ -25,10 +25,10 @@ class MyApp extends StatelessWidget {
       builder: (context, child) => MultiBlocProvider(
         providers: [
           BlocProvider(
-            create: (context) => sl<SeriesCubit>(),
+            create: (context) => sl<SeriesBloc>()..fetch(),
           ),
         ],
-        child: BlocBuilder<SeriesCubit, SeriesState>(
+        child: BlocBuilder<SeriesBloc, SeriesState>(
           builder: (context, state) {
             return MaterialApp(
               debugShowCheckedModeBanner: false,

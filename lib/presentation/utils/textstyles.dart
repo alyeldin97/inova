@@ -89,12 +89,14 @@ class PrimaryTextLight extends StatelessWidget {
   final double? bottom;
   final double? start;
   final double? end;
+  final TextOverflow? overflow;
   const PrimaryTextLight(
       {Key? key,
       this.top = 0.0,
       this.bottom = 0.0,
       this.end = 0.0,
       this.start = 0.0,
+      this.overflow,
       required this.text,
       this.hasShadow = false,
       required this.fontSize,
@@ -118,6 +120,7 @@ class PrimaryTextLight extends StatelessWidget {
         maxLines: maxLines,
         textAlign: isCenter! ? TextAlign.center : TextAlign.start,
         style: TextStyle(
+          overflow: overflow,
           shadows: hasShadow
               ? [
                   Shadow(

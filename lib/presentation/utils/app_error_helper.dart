@@ -27,13 +27,15 @@ class AppErrorHelper {
     String text2 =
         dataBeingFetched == '' ? '' : ' while fetching $dataBeingFetched';
     String text3 = ', Please try again later';
-    return Center(
-      child: Padding(
-        padding: EdgeInsetsDirectional.only(
-            top: topPadding == null ? 0.0 : topPadding.h,
-            start: 20.w,
-            end: 20.w),
-        child: PrimaryTextBold(text: text1 + text2 + text3, fontSize: 12),
+    return Scaffold(
+      body: Center(
+        child: Padding(
+          padding: EdgeInsetsDirectional.only(
+              top: topPadding == null ? 0.0 : topPadding.h,
+              start: 20.w,
+              end: 20.w),
+          child: PrimaryTextBold(text: text1 + text2 + text3, fontSize: 12),
+        ),
       ),
     );
   }

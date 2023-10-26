@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:Inova/data/local/user/series_lds.dart';
 import 'package:dartz/dartz.dart';
-import 'package:Inova/domain/repos/sign_in/series_repo.dart';
+import 'package:Inova/domain/repos/series/series_repo.dart';
 
 import '../../../data/models/series.dart';
 import '../../../data/remote/sign-in/series_rds.dart';

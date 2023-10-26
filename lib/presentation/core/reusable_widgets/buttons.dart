@@ -38,25 +38,21 @@ class AppButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onPressed,
-      child: Material(
-        elevation: 3.w,
-        borderRadius: BorderRadius.circular(10.r),
-        child: Container(
-          width: width.w,
-          height: height.h,
-          decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(10.r),
-            border: borderColor == null
-                ? null
-                : Border.all(color: borderColor!, width: borderThickness!.w),
-          ),
-          child: Center(
-            child: PrimaryTextSemiBold(
-              text: text,
-              fontSize: textSize,
-              color: textColor,
-            ),
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 10.w),
+        width: width.w,
+        height: height.h,
+        decoration: BoxDecoration(
+          color: color,
+          border: borderColor == null
+              ? null
+              : Border.all(color: borderColor!, width: borderThickness!.w),
+        ),
+        child: Center(
+          child: PrimaryTextSemiBold(
+            text: text,
+            fontSize: textSize,
+            color: textColor,
           ),
         ),
       ),

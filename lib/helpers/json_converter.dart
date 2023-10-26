@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:flutter/foundation.dart';
 import 'package:pluralize/pluralize.dart';
 
 jsonToDartConvertor(
@@ -148,7 +149,7 @@ jsonToDartConvertor(
   jsonKeys.forEach((key) {
     finalResult += "static const ${key.convertToCamelCase()} = '$key';\n";
   });
-  log(finalResult);
+  debugPrint(finalResult);
 }
 
 extension ConvertToCamelCase on String {

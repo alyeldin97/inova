@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 class AppColors {
   static const Color mainColor = const Color(0xffEA0033);
 
-  static  MaterialColor mainColorMaterial = createMaterialColor(Color(0xffEA0033));
+  static MaterialColor mainColorMaterial =
+      createMaterialColor(Color(0xffEA0033));
   static const Color secondaryColor = const Color(0xffC7C7C7);
 
   static const Color error = const Color(0xffFF0000);
@@ -14,12 +15,10 @@ class AppColors {
   static const Color white = Colors.white;
 
   static const Color backGroundColor = Colors.white;
-  static const Color lightGrey = Color(0xffF3F3F3);
+  static Color lightGrey = Colors.grey.withOpacity(0.5);
   static const Color d9d9Grey = Color(0xffD9D9D9);
   static const Color ebebGrey = Color(0xffEBEBEB);
-
 }
-
 
 MaterialColor createMaterialColor(Color color) {
   List strengths = <double>[.05];

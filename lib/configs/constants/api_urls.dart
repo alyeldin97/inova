@@ -3,6 +3,5 @@ class APIUrls {
 }
 
 class ApiEndPoints {
-  static const login = "${APIUrls.baseUrl}/users/login";
-  static const register = "${APIUrls.baseUrl}/users/register";
+  static const fetchAllSeries = "${APIUrls.baseUrl}/users/fetchAllSeries";
 }

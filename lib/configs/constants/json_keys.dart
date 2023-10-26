@@ -67,4 +67,21 @@ class JsonKeys {
   static const primaryColor = 'primary_color';
   static const secondColor = 'second_color';
   static const thirdColor = 'third_color';
+
+  static const video = 'video';
+  static const intensity = 'intensity';
+  static const difficulty = 'difficulty';
+  static const totalRunTime = 'totalRunTime';
+  static const coaches = 'coaches';
+  static const classess = 'classess';
+  static const posts = 'posts';
+  static const about = 'about';
+  static const duration = 'duration';
+  static const url = 'url';
+  static const user = 'user';
+  static const date = 'date';
+  static const comments = 'comments';
+  static const classId = 'class_id';
+  static const at = 'at';
+  static const challengeName = 'challenge_name';
 }
